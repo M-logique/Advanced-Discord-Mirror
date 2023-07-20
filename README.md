@@ -30,7 +30,7 @@ Copy your bot token and Fill The `config.json` file:
     "Logger": "Your log webhook URL"
 }
 ```
-
+### How to run?
 ```bash
   npm i
   node reg.js
