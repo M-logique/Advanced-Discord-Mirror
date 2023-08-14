@@ -21,7 +21,7 @@ module.exports = {
                 { name: 'Webhook', value: webhook || "no" },
             )
             
-        await interaction.reply({embeds:[embed]})
+        await interaction.reply({embeds:[embed], ephemeral: true})
 
 	},
 };
