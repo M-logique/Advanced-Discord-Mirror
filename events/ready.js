@@ -57,7 +57,8 @@ module.exports = {
 							  web.send({
 								content: attachment.url,
 								username: message.author.tag,
-								avatarURL: "https://cdn.discordapp.com/avatars/"+message.author.id+"/"+message.author.avatar+".jpeg",
+								avatarURL: "https://cdn.discordapp.com/avatars/"+message.author.id+"/"+message.author.avatar+".png",
+                                 allowedMentions: { parse: [] }
 							});
 							});
 							  }, 500);
@@ -68,6 +69,7 @@ module.exports = {
 						  username: message.author.tag,
 						  embeds: message.embeds,
 						  avatarURL: "https://cdn.discordapp.com/avatars/"+message.author.id+"/"+message.author.avatar+".png",
+                          allowedMentions: { parse: [] }
 						  
 						}) 
 					  }
@@ -76,6 +78,7 @@ module.exports = {
 						  content: message.content || "***NO CONTENT*** | Sticker or something else",
 						  username: message.author.tag,
 						  avatarURL: "https://cdn.discordapp.com/avatars/"+message.author.id+"/"+message.author.avatar+".png",
+                          allowedMentions: { parse: [] }
 						});
 						}
 						})
